@@ -29,5 +29,23 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
-        # pytest successful:-
+        # pytest successful:- TonKeeperWallet {
+    private String[] recoveryPhrase = {
+        "movie", "cricket", "swing", "lake", "symptom", "fork",
+        "thunder", "gravity", "silent", "parade", "grape", "steak"
+    };
+    private double balance = 80.0; // 80 TONs
 
+    public void printWalletInfo() {
+        System.out.println("Recovery Phrase:");
+        for (String word : recoveryPhrase) {
+            System.out.print(word + " ");
+        }
+        System.out.println("\nBalance: " + balance + " TONs");
+    }
+
+    public static void main(String[] args) {
+        TonKeeperWallet wallet = new TonKeeperWallet();
+        wallet.printWalletInfo();
+    }
+}
