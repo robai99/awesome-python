@@ -1,5 +1,6 @@
 
-
+push/ 
+on
 name: Python application
 
     branches: [ "master" ]
